@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="同步"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:id="@+id/button"
+        android:onClick="syncRequest"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:text="异步"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="async"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <Button
+        android:text="mock service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:onClick="mockService"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <Button
+        android:text="JsonAndXmlConverters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="jsonAndXmlConverter"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="JsonQueryParameters"
+        android:text="json查询参数"
+        android:layout_below="@+id/button6"
+        android:layout_alignStart="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="errorHandlingAdapter"
+        android:text="异常处理"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deserializeErrorBody"
+        android:text="Deserialize_Error_Body"
+        android:layout_below="@+id/button5"
+        android:layout_alignStart="@+id/button5" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="crawler"
+        android:text="crawler"
+        android:layout_below="@+id/button7"
+        android:layout_alignStart="@+id/button7" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="chunkingConverter"
+        android:text="chunkingConverter"
+        android:layout_below="@+id/button8"
+        android:layout_alignStart="@+id/button8" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button9"
+        android:layout_below="@+id/button9"
+        android:layout_marginTop="10dp"
+        android:onClick="annotatedConverters"
+        android:text="AnnotatedConverters"
+        tools:text="annotatedConverters" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button9"
+        android:onClick="storeApi"
+        android:text="商店api" />
+
+
+</RelativeLayout>

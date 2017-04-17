@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="store service"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:onClick="testGet"
+        android:text="get 请求"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="55dp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button11"
+        android:layout_below="@+id/button11"
+        android:layout_marginTop="12dp"
+        android:onClick="getByQueryMap"
+        android:text="GET 查询参数map" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button13"
+        android:layout_below="@+id/button13"
+        android:layout_marginTop="11dp"
+        android:onClick="doGetByMapAndHeaders"
+        android:text="get 请求携带headers信息" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doPost"
+        android:text="do post"
+        android:layout_below="@+id/button14"
+        android:layout_alignStart="@+id/button14"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="doPostAndQueryParams"
+        android:text="post请求在baseurl后增加参数"
+        android:layout_below="@+id/button15"
+        android:layout_alignStart="@+id/button15" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button16"
+        android:layout_below="@+id/button16"
+        android:layout_marginTop="12dp"
+        android:onClick="doPostFile"
+        android:text="post 上传文件" />
+
+
+</RelativeLayout>
